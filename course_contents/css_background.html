@@ -1,0 +1,202 @@
+<html><head><link rel="stylesheet" type="text/css" href="sample_style.css"></head><body>
+
+
+<div class="col-md-7 middle-col">
+<h1>CSS - Background</h1>
+
+<hr>
+<p>This chapter teaches you how to set backgrounds of various HTML elements. You can set the following background properties of an element −</p>
+<ul class="list">
+<li><p>The <b>background-color</b> property is used to set the background color of an element.</p></li>
+<li><p>The <b>background-image</b> property is used to set the background image of an element.</p></li>
+<li><p>The <b>background-repeat</b> property is used to control the repetition of an image in the background.</p></li>
+<li><p>The <b>background-position</b> property is used to control the position of an image in the background.</p></li>
+<li><p>The <b>background-attachment</b> property is used to control the scrolling of an image in the background.</p></li>
+<li><p>The <b>background</b> property is used as a shorthand to specify a number of other background properties.</p></li>
+</ul>
+<h2>Set the Background Color</h2>
+<p>Following is the example which demonstrates how to set the background color for an element.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p</span><span class="pln"> </span><b><span class="atn">style</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"</span><span class="pln">background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln">yellow</span><span class="pun">;</span><span class="atv">"</span></b><span class="tag">&gt;</span><span class="pln">
+      This text has a yellow background color.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span></pre> 
+<p>It will produce the following result −</p>
+<iframe onload="resizeFrame(this)" class="result" src="http://www.tutorialspoint.com/css/src/background.htm" height="203px" width="600px"></iframe>
+<h2>Set the Background Image</h2>
+<p>We can set the background image by calling local stored images as shown below</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         body  </span><span class="pun">{</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">"http://www.tutorialspoint.com/css/images/css.jpg"</span><span class="pun">);</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#cccccc;</span><span class="pln">
+         </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+      </span><span class="tag">&lt;body&gt;</span><span class="pln">
+         </span><span class="tag">&lt;h1&gt;</span><span class="pln">Hello World!</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span></pre>
+<p>It will produce the following result −</p>
+<iframe onload="resizeFrame(this)" class="result" src="http://www.tutorialspoint.com/css/src/background1.htm" height="203px" width="600px"></iframe>
+<h2>Repeat the Background Image</h2>
+<p>The following example demonstrates how to repeat the background image if an image is small. You can use <i>no-repeat</i> value for <i>background-repeat</i> property if you don't want to repeat an image, in this case image will display only once.</p>
+<p>By default <i>background-repeat</i> property will have <i>repeat</i> value.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         body </span><span class="pun">{</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">"http://www.tutorialspoint.com/css/images/css.jpg"</span><span class="pun">);</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">repeat</span><span class="pun">:</span><span class="pln"> repeat</span><span class="pun">;</span><span class="pln">
+         </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">Tutorials point</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre> 
+<p>It will produce the following result −</p>
+<iframe onload="resizeFrame(this)" class="result" src="http://www.tutorialspoint.com/css/src/background2.htm" height="203px" width="600px"></iframe>
+<p>The following example which demonstrates how to repeat the background image vertically.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         body </span><span class="pun">{</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">"http://www.tutorialspoint.com/css/images/css.jpg"</span><span class="pun">);</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">repeat</span><span class="pun">:</span><span class="pln"> repeat</span><span class="pun">-</span><span class="pln">y</span><span class="pun">;</span><span class="pln">
+         </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">Tutorials point&lt;/&gt;
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre> 
+<p>It will produce the following result −</p>
+<iframe onload="resizeFrame(this)" class="result" src="http://www.tutorialspoint.com/css/src/background4.htm" height="203px" width="600px"></iframe>
+<p>The following example demonstrates how to repeat the background image horizontally.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         body </span><span class="pun">{</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">"http://www.tutorialspoint.com/css/images/css.jpg"</span><span class="pun">);</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">repeat</span><span class="pun">:</span><span class="pln"> repeat</span><span class="pun">-</span><span class="pln">x</span><span class="pun">;</span><span class="pln">
+         </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">Tutorials point&lt;/&gt;
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre> 
+<p>It will produce the following result −</p>
+<iframe onload="resizeFrame(this)" class="result" src="http://www.tutorialspoint.com/css/src/background3.htm" height="203px" width="600px"></iframe>
+<h2>Set the Background Image Position</h2>
+<p>The following example demonstrates how to set the background image position 100 pixels away from the left side.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         body </span><span class="pun">{</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">"http://www.tutorialspoint.com/css/images/css.jpg"</span><span class="pun">);</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">position</span><span class="pun">:</span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+         </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">Tutorials point&lt;/&gt;
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre> 
+<p>It will produce the following result −</p>
+<iframe onload="resizeFrame(this)" class="result" src="http://www.tutorialspoint.com/css/src/background5.htm" height="203px" width="600px"></iframe>
+<p>The following example demonstrates how to set the background image position 100 pixels away from the left side and 200 pixels down from the top.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         body </span><span class="pun">{</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">"http://www.tutorialspoint.com/css/images/css.jpg"</span><span class="pun">);</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">position</span><span class="pun">:</span><span class="lit">100px</span><span class="pln"> </span><span class="lit">200px</span><span class="pun">;</span><span class="pln">
+         </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">Tutorials point&lt;/&gt;
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>It will produce the following result −</p>
+<iframe onload="resizeFrame(this)" class="result" src="http://www.tutorialspoint.com/css/src/background6.htm" height="203px" width="600px"></iframe>
+<h2>Set the Background Attachment</h2>
+<p>Background attachment determines whether a background image is fixed or scrolls with the rest of the page.</p>
+<p>The following example demonstrates how to set the fixed background image.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+   
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         body  </span><span class="pun">{</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">'http://www.tutorialspoint.com/css/images/css.jpg'</span><span class="pun">);</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">repeat</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">no</span><span class="pun">-</span><span class="pln">repeat</span><span class="pun">;</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">attachment</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">fixed</span><span class="pun">;</span><span class="pln">
+         </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+      
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+   
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre> 
+<p>It will produce the following result −</p>
+<iframe onload="resizeFrame(this)" class="result" src="http://www.tutorialspoint.com/css/src/background7.htm" height="565px" width="600px"></iframe>
+<p>The following example demonstrates how to set the scrolling background image.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+   
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         body  </span><span class="pun">{</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">'http://www.tutorialspoint.com/css/images/css.jpg'</span><span class="pun">);</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">repeat</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">no</span><span class="pun">-</span><span class="pln">repeat</span><span class="pun">;</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">attachment</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">fixed</span><span class="pun">;</span><span class="pln">
+            background</span><span class="pun">-</span><span class="pln">attachment</span><span class="pun">:</span><span class="pln">scroll</span><span class="pun">;</span><span class="pln">
+         </span><span class="pun">}.</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+      
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+   
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">The background-image is fixed. Try to scroll down the page.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre> 
+<p>It will produce the following result −</p>
+<iframe onload="resizeFrame(this)" class="result" src="http://www.tutorialspoint.com/css/src/background8.htm" height="565px" width="600px"></iframe>
+<h2>Shorthand Property</h2>
+<p>You can use the <i>background</i> property to set all the background properties at once. For example −</p>
+<pre class="result notranslate">&lt;p <b>style="background:url(/images/pattern1.gif) repeat fixed;"</b>&gt;
+   This parapgraph has fixed repeated background image.
+&lt;/p&gt;
+</pre> 
+<a href="../homepage/html_editor/EasyCode_HTML.php" target="_top">
+    <input type=button id="tryitbutton" value="Try It" style="cursor: pointer;"/></a>
+
+
+</body></html>

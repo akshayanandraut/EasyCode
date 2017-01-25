@@ -1,0 +1,153 @@
+<html><head><link rel="stylesheet" type="text/css" href="sample_style.css"></head>
+<body>
+
+<div class="col-md-7 middle-col">
+<h1>HTML Attributes</h1>
+<hr>
+<hr>
+<p>We have seen few HTML tags and their usage like heading tags &lt;h1&gt;, &lt;h2&gt;, paragraph tag &lt;p&gt; and other tags. We used them so far in their simplest form, but most of the HTML tags can also have attributes, which are extra bits of information.</p> 
+<p>An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts: a <b>name</b> and a <b>value</b>:</p>
+<ul class="list">
+<li><p>The <b>name</b> is the property you want to set. For example, the paragraph &lt;p&gt; element in the example carries an attribute whose name is <b>align</b>, which you can use to indicate the alignment of paragraph on the page.</p></li>
+<li><p>The <b>value</b> is what you want the value of the property to be set and always put within quotations. The below example shows three possible values of align attribute: <b>left, center</b> and <b>right</b>.</p></li>
+</ul>
+<p>Attribute names and attribute values are case-insensitive. However, the World Wide Web Consortium (W3C) recommends lowercase attributes/attribute values in their HTML 4 recommendation.</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">Align Attribute  Example</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">align</span><span class="pun">=</span><span class="atv">"left"</span><span class="tag">&gt;</span><span class="pln">This is left aligned</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">align</span><span class="pun">=</span><span class="atv">"center"</span><span class="tag">&gt;</span><span class="pln">This is center aligned</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">align</span><span class="pun">=</span><span class="atv">"right"</span><span class="tag">&gt;</span><span class="pln">This is right aligned</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will display following result:</p>
+<div class="result notranslate">
+<p style="text-align:left">This is left aligned</p>
+<p style="text-align:center">This is center aligned</p>
+<p style="text-align:right">This is right aligned</p>
+</div>
+<h2>Core Attributes</h2>
+<p>The four core attributes that can be used on the majority of HTML elements (although not all) are:</p>
+<ul class="list">
+<li>id</li>
+<li>title</li>
+<li>class</li>
+<li>style</li>
+</ul>
+<h3>The id Attribute</h3>
+<p>The <b>id</b> attribute of an HTML tag can be used to uniquely identify any element within an HTML page. There are two primary reasons that you might want to use an id attribute on an element:</p>
+<ul>
+<li><p>If an element carries an id attribute as a unique identifier it is possible to identify just that element and its content.</p></li>
+<li><p>If you have two elements of the same name within a Web page (or style sheet), you can use the id
+attribute to distinguish between elements that have the same name.</p></li>
+</ul>
+<p>We will discuss style sheet in separate tutorial. For now, let's use the id attribute to distinguish between two paragraph elements as shown below.</p>
+<h4>Example</h4>
+<pre class="result">&lt;p id="html"&gt;This para explains what is HTML&lt;/p&gt;
+&lt;p id="css"&gt;This para explains what is Cascading Style Sheet&lt;/p&gt;
+</pre>
+<h3>The title Attribute</h3>
+<p>The <b>title</b> attribute gives a suggested title for the element. They syntax for the <b>title</b> attribute is  similar as explained for <b>id</b> attribute:</p>
+<p>The behavior of this attribute will depend upon the element that carries it, although it is often displayed as a tooltip when cursor comes over the element or while the element is loading.</p>
+<h4>Example</h4>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">The title Attribute Example</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;h3</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Hello HTML!"</span><span class="tag">&gt;</span><span class="pln">Titled Heading Tag Example</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate">
+<h3 title="Hello HTML!">Titled Heading Tag Example</h3>
+</div>
+<p>Now try to bring your cursor over "Titled Heading Tag Example" and you will see that whatever title you used in your code is coming out as a tooltip of the cursor.</p>
+<h3>The class Attribute</h3>
+<p>The <b>class</b> attribute is used to associate an element with a style sheet, and specifies the class of element. You will learn more about the use of the class attribute when you will learn Cascading Style Sheet (CSS). So for now you can avoid it. </p>
+<p>The value of the attribute may also be a space-separated list of class names. For example:</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="kwd">class</span><span class="pun">=</span><span class="str">"className1 className2 className3"</span></pre>
+<h3>The style Attribute</h3>
+<p>The style attribute allows you to specify Casecading Style Sheet (CSS) rules within the element.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">The style Attribute</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">font</span><span class="pun">-</span><span class="pln">family</span><span class="pun">:</span><span class="pln">arial</span><span class="pun">;</span><span class="pln"> color</span><span class="pun">:#</span><span class="pln">FF0000</span><span class="pun">;</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">Some text...</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate">
+<p style="font-family:arial; color:#FF0000;">Some text...</p>
+</div>
+<p>At this point of time, we are not learning CSS, so just let's proceed without bothering much about CSS. Here you need to understand what are HTML attributes and how they can be used while formatting content.</p>
+<h2>Internationalization Attributes</h2>
+<p>There are three internationalization attributes, which are available for most (although not all) XHTML elements.</p>
+<ul>
+<li>dir</li>
+<li>lang</li>
+<li>xml:lang</li>
+</ul>
+<h3>The dir Attribute</h3>
+<p>The <b>dir</b> attribute allows you to indicate to the browser the direction in which the text should flow. The dir attribute can take one of two values, as you can see in the table that follows:</p>
+<table class="table table-bordered">
+<tbody><tr><th>Value</th><th>Meaning</th></tr>
+<tr><td>ltr</td><td>Left to right (the default value)</td></tr>
+<tr><td>rtl</td><td>Right to left (for languages such as Hebrew or Arabic that are read right to left)</td></tr>
+</tbody></table>
+<h4>Example</h4>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html</span><span class="pln"> </span><span class="atn">dir</span><span class="pun">=</span><span class="atv">"rtl"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">Display Directions</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+This is how IE 5 renders right-to-left directed text.
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate" style="text-align:right;">
+This is how IE 5 renders right-to-left directed text.
+</div>
+<p>When <i>dir</i> attribute is used within the &lt;html&gt; tag, it determines how text will be presented within the entire document. When used within another tag, it controls the text's direction for just the content of that tag.</p>
+<h3>The lang Attribute</h3>
+<p>The <b>lang</b> attribute allows you to indicate the main language used in a document, but this attribute was kept in HTML only for backwards compatibility with earlier versions of HTML. This attribute has been replaced by the <b>xml:lang</b> attribute in new XHTML documents.</p>
+<p>The values of the <i>lang</i> attribute are ISO-639 standard two-character language codes. Check <b>HTML Language Codes: ISO 639</b> for a complete list of language codes.</p>
+<h4>Example</h4>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html</span><span class="pln"> </span><span class="atn">lang</span><span class="pun">=</span><span class="atv">"en"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">English Language Page</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+This page is using English Language
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<h3>The xml:lang Attribute</h3>
+<p>The <i>xml:lang</i> attribute is the XHTML replacement for the <i>lang</i> attribute. The value of the <i>xml:lang</i> attribute should be an ISO-639 country code as mentioned in previous section.</p>
+<h2>Generic Attributes</h2>
+<p>Here's a table of some other attributes that are readily usable with many of the HTML tags.</p>
+<table class="table table-bordered">
+<tbody><tr><th><b>Attribute</b></th><th><b>Options</b></th><th><b>Function</b></th></tr>
+<tr><td>align</td><td>right, left, center</td><td>Horizontally aligns tags</td></tr>
+<tr><td>valign</td><td>top, middle, bottom</td><td>Vertically aligns tags within an HTML element.</td></tr>
+<tr><td>bgcolor</td><td>numeric, hexidecimal, RGB values</td><td>Places a background color behind an element</td></tr>
+<tr><td>background</td><td>URL</td><td>Places a background image behind an element</td></tr>
+<tr><td>id</td><td>User Defined</td><td>Names an element for use with Cascading Style Sheets.</td></tr>
+<tr><td>class</td><td>User Defined</td><td>Classifies an element for use with Cascading Style Sheets.</td></tr>
+<tr><td>width</td><td>Numeric Value</td><td>Specifies the width of tables, images, or table cells.</td></tr>
+<tr><td>height</td><td>Numeric Value</td><td>Specifies the height of tables, images, or table cells.</td></tr>
+<tr><td>title</td><td>User Defined</td><td>"Pop-up" title of the elements.</td></tr>
+</tbody></table>
+<p>We will see related examples as we will proceed to study other HTML tags. For a complete list of HTML Tags and related attributes please check reference to html<b>HTML Tags List</b></p>
+<a href="../homepage/html_editor/EasyCode_HTML.php" target="_top">
+    <input type=button id="tryitbutton" value="Try It" style="cursor: pointer;"/></a>
+
+</body></html>

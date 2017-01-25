@@ -1,0 +1,241 @@
+/*general for covering full width of page*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+/*signup*/
+#signuppage a{
+    color: white;
+    font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    padding-left: 20px;
+    text-decoration: none;
+}
+#signuppage a:hover{
+    color:#F90;
+    cursor:pointer;
+    opacity: .80;
+}
+
+/*login*/
+logarrow{
+    color: white;
+    font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    padding-left: 10px;
+    text-decoration: none;
+}
+logarrow:hover{
+    color:#F90;
+    cursor:pointer;
+    opacity: .80;
+
+}
+	
+#toggle {
+    width: 275px;
+    height: 140px;
+    background: #ccc;
+}
+			
+#login_btn:hover{
+    color:white;
+    cursor:pointer;
+}
+#login_btn{
+    color:white;
+}
+article:hover{
+    opacity:1;
+    z-index:0;
+}
+
+/*navigation*/
+nav{
+  background-color: #1295C9;
+  opacity: .95;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  box-shadow: 2px 2px 10px 1px #f90;
+}
+nav ul{
+    float: right;
+    margin: 0px;
+    padding: 20px 0;
+}
+nav li{
+    display: inline;
+    padding-right: 20px;
+}
+nav li a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+nav li a:hover{
+    cursor: pointer;
+    opacity: .80;
+    color: #f90;
+}
+
+/*Main*/
+.main_cover{
+  background: url("developer.png") no-repeat;
+  background-size: cover;
+  height: 750px;
+}
+.main{
+  position: relative;
+  text-align: center;
+  top: 220px;
+}
+.main h1 {
+  font-size: 70px;
+  font-weight: 800;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.main p {
+  font-size: 30px;
+}
+
+/*Courses*/
+.courses{
+    position: relative;
+  background: url("giftly.png");
+  padding-bottom: 30px;
+}
+.courses .incourse{
+  padding-top: 30px;
+  text-align: center;
+}
+h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-top: 0;
+  padding: 60px 0 15px 0;
+}
+.floatbox,.floatbox1,.floatbox2{
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  vertical-align: top;
+  width: 210px;
+  height: 260px;
+}
+.floatbox{
+      background: url("modi_html.png") no-repeat;
+}
+.floatbox1{
+  background: url("modi_css.png") no-repeat;
+}
+.floatbox2{
+  background: url("modi_js.png") no-repeat;
+}
+.floatbox:hover,.floatbox1:hover,.floatbox2:hover,.floatbox3:hover{
+    transform: scale(1.1);
+}
+
+/*Code*/
+.code{
+  padding: 80px 80px 80px 80px;
+  background-color: yellowgreen;
+}
+
+.code h2 {
+  color: #333;
+}
+.code img {
+  border-radius: 2%;
+  float: left;
+  margin: 40px 40px;
+  box-shadow: 2px 2px 10px 1px #f90;
+}  
+.code_text{
+  margin: 0;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.floatbox3{
+  background-color: #1295C9;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  box-shadow: 2px 2px 10px 1px #f90;
+}
+
+/*Play*/
+.play{
+    background-color: chocolate;
+    padding: 100px 100px 100px 100px;
+}
+.playimg{
+  border-radius: 2%;
+  float: left;
+  padding: 0px 30px 30px 30px;
+  width: 200px;
+  height: 200px;
+}
+.playimg:hover{
+    transform: scale(1.1);
+}
+.play h2{
+    font-size: 60px;
+    color: white;
+    padding-left: 450px;
+}
+
+/*Contact*/
+.contact{
+    background-color: peachpuff;
+    height: 500px;
+}
+.contact h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+.contact a img{
+    border-radius: 40%;
+  float: left;
+  padding: 50px 50px 50px 50px;
+  width: 200px;
+  height: 200px;
+}
+.contact a img:hover{
+    transform: scale(1.2);
+}
+/*footer*/
+footer {
+  background-color: #1295C9;
+  padding-top:20px;
+}
+footer p {
+  text-align: right;
+  color: #fff;
+  margin: 0;
+  font-size: 18px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+}

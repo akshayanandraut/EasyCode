@@ -1,0 +1,27 @@
+body{
+background:#e0e0e0;
+font-size:1.5em;
+font-family:"Bradley Hand ITC";
+FONT-weight:"2";
+}
+#tryitbutton
+{
+background:    #1295c9;
+background:    -webkit-linear-gradient(#1295c9, #1295c9 50%, #1295c9);
+background:    linear-gradient(#1295c9, #1295c9 50%, #1295c9);
+border-radius: 3px;
+color:         #fff;
+display:       inline-block;
+padding:       8px 20px;
+font:          normal 700 24px/1 "Calibri", sans-serif;
+text-align:    center;
+text-shadow:   2px 2px 0 #000;
+}
+h1,h2,h3,h4,h5,h6
+{
+font-family:"chiller";
+font-size:2.8em;
+}
+
+
+  

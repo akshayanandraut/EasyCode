@@ -1,0 +1,417 @@
+<html><head><link rel="stylesheet" type="text/css" href="sample_style.css"></head>
+
+<body>
+<div class="col-md-7 middle-col">
+<h1>HTML Tables</h1>
+<hr>
+<p>The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.</p>
+<p>The HTML tables are created using the <b>&lt;table&gt;</b> tag in which the <b>&lt;tr&gt;</b> tag is used to create table rows and <b>&lt;td&gt;</b> tag is used to create data cells.</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate tryit prettyprinted" style="cursor: default;"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">HTML Tables</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Row 1, Column 1</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Row 1, Column 2</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Row 2, Column 1</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Row 2, Column 2</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/table&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate">
+<table border="1" style="border-collapse: separate; border-spacing: 1px;">
+<tbody><tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+</tbody></table>
+</div>
+<p>Here <b>border</b> is an attribute of &lt;table&gt; tag and it is used to put a border across all the cells. If you do not need a border then you can use border="0".</p>
+<h2>Table Heading</h2>
+<p>Table heading can be defined using <b>&lt;th&gt;</b> tag. This tag will be put to replace &lt;td&gt; tag, which is used to represent actual data cell. Normally you will put your top row as table heading as shown below, otherwise you can use &lt;th&gt; element in any row.</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">HTML Table Header</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Name</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Salary</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Ramesh Raman</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">5000</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Shabbir Hussein</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">7000</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/table&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate">
+<table border="1" style="border-collapse: separate; border-spacing: 1px;">
+<tbody><tr>
+<th style="background:#fff;">Name</th>
+<th style="background:#fff;">Salary</th>
+</tr>
+<tr>
+<td>Ramesh Raman</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>Shabbir Hussein</td>
+<td>7000</td>
+</tr>
+</tbody></table>
+</div>
+<h2>Cellpadding and Cellspacing Attributes</h2>
+<p>There are two attribiutes called  <i>cellpadding</i> and <i>cellspacing</i> which you will use to adjust the white space in your table cells. The cellspacing attribute defines the width of the border, while cellpadding represents the distance between cell borders and the content within a cell.</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">HTML Table Cellpadding</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="pln"> </span><span class="atn">cellpadding</span><span class="pun">=</span><span class="atv">"5"</span><span class="pln"> </span><span class="atn">cellspacing</span><span class="pun">=</span><span class="atv">"5"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Name</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Salary</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Ramesh Raman</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">5000</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Shabbir Hussein</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">7000</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/table&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate">
+<table border="1" style="padding:5px !important;  border-spacing: 1px;  border-collapse: separate;">
+<tbody><tr>
+<th style="padding:5px;background:#fff;">Name</th>
+<th style="padding:5px;background:#fff;">Salary</th>
+</tr>
+<tr>
+<td style="padding:5px;">Ramesh Raman</td>
+<td style="padding:5px;">5000</td>
+</tr>
+<tr>
+<td style="padding:5px;">Shabbir Hussein</td>
+<td style="padding:5px;">7000</td>
+</tr>
+</tbody></table>
+</div>
+<h2>Colspan and Rowspan Attributes</h2>
+<p>You will use <b>colspan</b> attribute if you want to merge two or more columns into a single column. Similar way you will use <b>rowspan</b> if you want to merge two or more rows.</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">HTML Table Colspan/Rowspan</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Column 1</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Column 2</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Column 3</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;&lt;td</span><span class="pln"> </span><span class="atn">rowspan</span><span class="pun">=</span><span class="atv">"2"</span><span class="tag">&gt;</span><span class="pln">Row 1 Cell 1</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="pln">Row 1 Cell 2</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="pln">Row 1 Cell 3</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;&lt;td&gt;</span><span class="pln">Row 2 Cell 2</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="pln">Row 2 Cell 3</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;&lt;td</span><span class="pln"> </span><span class="atn">colspan</span><span class="pun">=</span><span class="atv">"3"</span><span class="tag">&gt;</span><span class="pln">Row 3 Cell 1</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/table&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate">
+<table border="1" style="border-collapse: separate;border-spacing: 1px;">
+<tbody><tr>
+<th style="background:#fff;">Column 1</th>
+<th style="background:#fff;">Column 2</th>
+<th style="background:#fff;">Column 3</th>
+</tr>
+<tr><td rowspan="2">Row 1 Cell 1</td>
+<td>Row 1 Cell 2</td><td>Row 1 Cell 3</td></tr>
+<tr><td>Row 2 Cell 2</td><td>Row 2 Cell 3</td></tr>
+<tr><td colspan="3">Row 3 Cell 1</td></tr>
+</tbody></table>
+</div>
+<h2>Tables Backgrounds</h2>
+<p>You can set table background using one of the following two ways:</p>
+<ul class="list">
+<li><p><b>bgcolor</b> attribute - You can set background color for whole table or just for one cell.</p></li>
+<li><p><b>background</b> attribute - You can set background image for whole table or just for one cell.</p></li>
+</ul>
+<p>You can also set border color also using <b>bordercolor</b> attribute.</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">HTML Table Background</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="pln"> </span><span class="atn">bordercolor</span><span class="pun">=</span><span class="atv">"green"</span><span class="pln"> </span><span class="atn">bgcolor</span><span class="pun">=</span><span class="atv">"yellow"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Column 1</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Column 2</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Column 3</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;&lt;td</span><span class="pln"> </span><span class="atn">rowspan</span><span class="pun">=</span><span class="atv">"2"</span><span class="tag">&gt;</span><span class="pln">Row 1 Cell 1</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="pln">Row 1 Cell 2</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="pln">Row 1 Cell 3</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;&lt;td&gt;</span><span class="pln">Row 2 Cell 2</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="pln">Row 2 Cell 3</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;&lt;td</span><span class="pln"> </span><span class="atn">colspan</span><span class="pun">=</span><span class="atv">"3"</span><span class="tag">&gt;</span><span class="pln">Row 3 Cell 1</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/table&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate">
+<table border="1" bordercolor="green" style="background:yellow !important; border-collapse: separate;border-spacing: 1px;">
+<tbody><tr>
+<th style="background:yellow !important">Column 1</th>
+<th style="background:yellow !important">Column 2</th>
+<th style="background:yellow !important">Column 3</th>
+</tr>
+<tr><td rowspan="2">Row 1 Cell 1</td>
+<td>Row 1 Cell 2</td><td>Row 1 Cell 3</td></tr>
+<tr><td>Row 2 Cell 2</td><td>Row 2 Cell 3</td></tr>
+<tr><td colspan="3">Row 3 Cell 1</td></tr>
+</tbody></table>
+</div>
+<p>Here is an example of using <b>background</b> attribute. Here we will use an image available in /images directory.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">HTML Table Background</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="pln"> </span><span class="atn">bordercolor</span><span class="pun">=</span><span class="atv">"green"</span><span class="pln"> </span><span class="atn">background</span><span class="pun">=</span><span class="atv">"/images/test.png"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Column 1</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Column 2</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;th&gt;</span><span class="pln">Column 3</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;&lt;td</span><span class="pln"> </span><span class="atn">rowspan</span><span class="pun">=</span><span class="atv">"2"</span><span class="tag">&gt;</span><span class="pln">Row 1 Cell 1</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="pln">Row 1 Cell 2</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="pln">Row 1 Cell 3</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;&lt;td&gt;</span><span class="pln">Row 2 Cell 2</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="pln">Row 2 Cell 3</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;&lt;td</span><span class="pln"> </span><span class="atn">colspan</span><span class="pun">=</span><span class="atv">"3"</span><span class="tag">&gt;</span><span class="pln">Row 3 Cell 1</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/table&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result. Here background image did not apply to table's header.</p>
+<div class="result notranslate">
+<table border="1" bordercolor="green" background="/images/test.png" style="border-collapse: separate;border-spacing: 1px;">
+<tbody><tr>
+<th style="background:#fff;">Column 1</th>
+<th style="background:#fff;">Column 2</th>
+<th style="background:#fff;">Column 3</th>
+</tr>
+<tr><td rowspan="2">Row 1 Cell 1</td>
+<td>Row 1 Cell 2</td><td>Row 1 Cell 3</td></tr>
+<tr><td>Row 2 Cell 2</td><td>Row 2 Cell 3</td></tr>
+<tr><td colspan="3">Row 3 Cell 1</td></tr>
+</tbody></table>
+</div>
+<h2>Table Height and Width</h2>
+<p>You can set a table width and height using <b>width</b> and <b>height</b> attrubutes. You can specify table width or height in terms of pixels or in terms of percentage of available screen area.</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">HTML Table Width/Height</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"400"</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">"150"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Row 1, Column 1</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Row 1, Column 2</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Row 2, Column 1</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Row 2, Column 2</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/table&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate">
+<table border="1" width="400" height="150" style="border-collapse: separate;border-spacing: 1px;">
+<tbody><tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+</tbody></table>
+</div>
+<h2>Table Caption</h2>
+<p>The <b>caption</b> tag will serve as a title or explanation for the table and it shows up at the top of the table. This tag is deprecated in newer version of HTML/XHTML.</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">HTML Table Caption</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"100%"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;caption&gt;</span><span class="pln">This is the caption</span><span class="tag">&lt;/caption&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">row 1, column 1</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="pln">row 1, columnn 2</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">row 2, column 1</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="pln">row 2, columnn 2</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/table&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate">
+<table border="1" style="border-collapse: separate;border-spacing: 1px;" width="100%">
+<caption>This is the caption</caption>
+<tbody><tr>
+<td>row 1, column 1</td><td>row 1, columnn 2</td>
+</tr>
+<tr>
+<td>row 2, column 1</td><td>row 2, columnn 2</td>
+</tr>
+</tbody></table>
+</div>
+<h2>Table Header, Body, and Footer</h2>
+<p>Tables can be divided into three portions: a header, a body, and a foot. The head and foot are rather similar to headers and footers in a word-processed document that remain the same for every page, while the body is the main content holder of the table.</p>
+<p>The three elements for separating the head, body, and foot of a table are:</p>
+<ul class="list">
+<li><b>&lt;thead&gt; - </b>to create a separate table header.</li>
+<li><b>&lt;tbody&gt; - </b>to indicate the main body of the table.</li>
+<li><b>&lt;tfoot&gt; - </b>to create a separate table footer.</li>
+</ul>
+<p>A table may contain several &lt;tbody&gt; elements to indicate different <i>pages</i> or groups of data. But it is notable that &lt;thead&gt; and &lt;tfoot&gt; tags should appear before &lt;tbody&gt;</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">HTML Table</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"100%"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;thead&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">colspan</span><span class="pun">=</span><span class="atv">"4"</span><span class="tag">&gt;</span><span class="pln">This is the head of the table</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/thead&gt;</span><span class="pln">
+</span><span class="tag">&lt;tfoot&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">colspan</span><span class="pun">=</span><span class="atv">"4"</span><span class="tag">&gt;</span><span class="pln">This is the foot of the table</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tfoot&gt;</span><span class="pln">
+</span><span class="tag">&lt;tbody&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Cell 1</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Cell 2</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Cell 3</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">Cell 4</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tbody&gt;</span><span class="pln">
+</span><span class="tag">&lt;/table&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate">
+<table border="1" width="100%" style="border-collapse: separate;border-spacing: 1px;">
+<thead>
+<tr>
+<td colspan="4">This is the head of the table</td>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="4">This is the foot of the table</td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td>Cell 1</td>
+<td>Cell 2</td>
+<td>Cell 3</td>
+<td>Cell 4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>Nested Tables</h2>
+<p>You can use one table inside another table. Not only tables you can use almost all the tags inside table data tag &lt;td&gt;.</p>
+<h2>Example</h2>
+<p>Following is the example of using another table and other tags inside a table cell.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">HTML Table</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"100%"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;td&gt;</span><span class="pln">
+   </span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"100%"</span><span class="tag">&gt;</span><span class="pln">
+   </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+   </span><span class="tag">&lt;th&gt;</span><span class="pln">Name</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+   </span><span class="tag">&lt;th&gt;</span><span class="pln">Salary</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+   </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+   </span><span class="tag">&lt;td&gt;</span><span class="pln">Ramesh Raman</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+   </span><span class="tag">&lt;td&gt;</span><span class="pln">5000</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+   </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+   </span><span class="tag">&lt;td&gt;</span><span class="pln">Shabbir Hussein</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+   </span><span class="tag">&lt;td&gt;</span><span class="pln">7000</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/table&gt;</span><span class="pln">
+</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+</span><span class="tag">&lt;/table&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce following result:</p>
+<div class="result notranslate">
+<table border="1" style="border-collapse: separate;border-spacing: 1px; width:100%">
+<tbody><tr>
+   <td>
+      <table border="1" style="border-collapse: separate;border-spacing: 1px;width:100%">
+      <tbody><tr>
+         <th style="background:#fff;">Name</th>
+         <th style="background:#fff;">Salary</th>
+      </tr>
+      <tr>
+         <td>Ramesh Raman</td>
+         <td>5000</td>
+      </tr>
+      <tr>
+         <td>Shabbir Hussein</td>
+         <td>7000</td>
+      </tr>
+      </tbody></table>
+   </td>
+</tr>
+</tbody></table>
+<a href="../homepage/html_editor/EasyCode_HTML.php" target="_top">
+    <input type=button id="tryitbutton" value="Try It" style="cursor: pointer;"/></a>
+</body></html>
